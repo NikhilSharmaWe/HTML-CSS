@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      .container {
+        width: 900px;
+        border: 3px solid burlywood;
+        border-radius: 10px;
+        margin: 33px auto; /*margin is y axis is 33px and in x axis is auto by auto the system gives the box same margin in both sides of the x axis. Margin auto work in those elemnets where we have given width*/
+        background-color: rgb(225, 207, 243);
+      }
+      .item {
+        border: 3px solid grey;
+        border-radius: 10px;
+        margin: 12px 3px;
+        padding: 12px 3px; /*12px is in y axis and 3px is in x axis*/
+        background: rgb(255, 237, 237);
+      }
+      #fruit {
+        float: left; /*With the float property, it is easy to float boxes of content side by side, because with float-left property on for ex three boxes then for first box the latter box should start from its right side*/
+        width: 49%;
+      }
+      #computer {
+        float:left;
+        width:49%;
+      }
+      #stationary {
+        clear:left;
+        width:100%;
+      }
+      p,h3{
+        /* text-align:right;
+        text-align: left;
+        text-align: center; */
+        text-align: justify;
+      }
+      h1{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruit" class="item">
+          <h3>Fruit</h3>
+          <p id="fruitpara" class="para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            quasi aperiam dolorem, eum modi inventore laudantium reiciendis
+            commodi rerum hic earum suscipit dignissimos repudiandae sapiente ex,
+            perspiciatis nemo iusto officiis enim aliquam esse fugiat blanditiis
+            autem voluptates. Quae id earum architecto est quod laudantium ea,
+            sunt ratione praesentium incidunt, cupiditate eos ad veritatis tempore
+            quo nam laboriosam ex, quia dolore. Id architecto sed laudantium nobis
+            tenetur officiis sit?
+          </p>
+        </div>
+        <div id="computer" class="item">
+          <h3>Computer</h3>
+          <p id="computerpara" class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+            aspernatur, fugiat tempora nihil harum veniam accusantium magni
+            repellat, autem repudiandae optio voluptatem voluptatum! Reiciendis
+            tenetur aliquid molestiae totam voluptates officia doloremque, ipsum
+            ullam dignissimos? Error mollitia corporis officiis, eaque ut quaerat
+            rem sunt. Consequatur corrupti deleniti expedita tempora repellat
+            dolorum nulla modi unde quidem asperiores sint eligendi velit
+            aspernatur, assumenda provident magnam recusandae nihil, quo accusamus
+            suscipit ut!
+          </p>
+        </div>
+        <div id="stationary" class="item">
+          <h3>Stationary</h3>
+          <p id="stationarypara" class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim,
+            obcaecati, adipisci suscipit, quam repellendus consectetur atque fugit
+            voluptatem tenetur possimus harum vero vitae maiores aliquid dicta
+            ullam ipsum culpa.
+          </p>
+        </div>
+        <div id="glasses" class="item">
+          <h3>Glass</h3>
+          <p id="glasspara" class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim,
+            obcaecati, adipisci suscipit, quam repellendus consectetur atque fugit
+            voluptatem tenetur possimus harum vero vitae maiores aliquid dicta
+            ullam ipsum culpa.
+          </p>
+        </div>
+      </div>
+</body>
+</html>

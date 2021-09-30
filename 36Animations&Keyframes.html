@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes & Animations</title>
+    <style>
+        .container{
+            background-color: greenyellow;
+        }
+        .box1{
+            /* background-color: tomato;
+            width:250px;
+            height:250px;
+            position:relative;
+            animation-name:nikhil1;
+            animation-duration:2s;
+            animation-iteration-count:3; */
+            /* animation-fill-mode: forwards;for styling in "to" be executed after completion of the animation   */
+            /* animation-fill-mode:alternate;default */
+            /* animation-timing-function: ease-out;
+            animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction:alternate; */
+            /* animation-direction:reverse;  */
+        }
+        @keyframes nikhil1{
+            from{
+                width:50px;
+            }
+            to{
+                width:1000px;
+            }
+        }
+
+        .box2{
+            background-color: tomato;
+            width:250px;
+            height:250px;
+            position:relative;
+            animation-name:nikhil2;
+            animation-duration:2s;
+            animation-iteration-count:3;
+            /* animation-fill-mode: forwards;for styling in "to" be executed after completion of the animation   */
+            /* animation-fill-mode:alternate;default */
+            /* animation-timing-function: ease-out;
+            animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction:alternate; */
+
+            /*animation short hand property*/
+            /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+            animation: nikhil2 5 ease-in 1s 3 backwards;
+            
+        }
+        @keyframes nikhil2{
+            0%{
+                top:0px;
+                left:0px;
+            }
+            25%{
+                top:250px;
+                left:0px;
+            }
+            75%{
+                top:250px;
+                left:250px;
+            }
+            100%{
+                top:0px;
+                left:250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">This is a box1</div>
+        <div class="box2">This is a box2</div>
+    </div>
+</body>
+</html>

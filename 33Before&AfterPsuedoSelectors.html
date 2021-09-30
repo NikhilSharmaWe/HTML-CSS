@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after psuedo selectors</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            margin:0px;
+            padding:0px;
+        }        
+        header::before{
+            content:"";
+            background:url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            position:absolute;
+            top:0;
+            left:0;
+            height: 100vh;
+            width:100vw;
+            z-index:-1;
+            opacity:0.5;
+        }
+        .navigation{
+            font-size:20px;
+            display:flex;
+        }
+        li{
+            list-style: none;
+            padding:8px 24px;
+        }
+        li a{
+            color:white;
+        }
+        section{
+            height: 344px;
+            margin:3px 23px;
+            display: flex;
+            flex-direction: column;/*default*/
+            align-items: center;/*horizontally in this case because fd is column*/
+            padding:10px;
+            justify-content: center;
+            margin:50px 100px;
+        }
+        /* section::before{
+            content:"this is a content before";
+        }
+        section::after{
+            content:"this is a content after";
+        } */
+        h3{
+            font-size:4rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href="">Services</a></li>
+                <li class="item"><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to coding world</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur veniam deleniti deserunt saepe rerum itaque minima aliquam alias praesentium quaerat mollitia dolores ipsam, reprehenderit, vitae magnam ad officiis dolorum quasi tempora facilis laborum cupiditate?</p>
+        </section>
+    </header>
+</body>
+</html>

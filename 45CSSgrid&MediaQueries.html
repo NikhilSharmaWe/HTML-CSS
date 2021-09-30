@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            "nav nav nav nav"
+            "section section section aside"
+            "footer footer footer footer";
+        }
+        @media only screen and (max-width:300px){
+            body{
+                background-color: red;
+            }
+            .container{
+                grid-template-areas: 
+                "nav nav nav nav"
+                "section section section section"
+                "aside aside aside aside"
+                "footer footer footer footer";
+            }
+            aside{
+                display:none;
+            }
+            span{
+                display:block;
+                text-align:center
+            }
+            
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            body{
+                background-color: blue;
+            }
+            .container{
+                grid-template-areas: 
+                "nav nav nav nav"
+                "section section section section"
+                "aside aside aside aside"
+                "footer footer footer footer";
+            }
+            span{
+                display:block;
+                text-align:center
+            }
+            aside{
+                display:none;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width:800px){
+            body{
+                background-color: yellow;
+            }
+            .container{
+                grid-template-areas: 
+                "nav nav nav nav"
+                "section section section section"
+                "aside aside aside aside"
+                "footer footer footer footer";;
+            }
+            span{
+                display:block;
+                text-align:center
+            }
+            
+        }
+        @media only screen and (min-width:800px){
+            body{
+                background-color: green;
+            }
+        }
+        .border-now{
+            border:2px solid black;
+            background-color: tomato;
+        }
+        nav{
+            grid-area: nav;
+        }
+        section{
+            grid-area:section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="border-now">
+            <span>Home</span>
+            <span>About</span>   
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="border-now">
+            <h2>Learn CSS in hindi</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et accusamus harum velit autem repellendus debitis amet sint suscipit? Tempora accusantium eligendi eius itaque numquam dolore voluptatum voluptates magni, voluptas, voluptatem ratione omnis dolorem nesciunt dolores atque, quo quia similique fugit harum explicabo minima recusandae suscipit perspiciatis obcaecati. Rem neque totam reprehenderit sequi sint nihil accusantium deleniti quidem eligendi maxime libero atque omnis iure dolores voluptatibus, consequuntur incidunt minima eum. Officiis, facere odit laudantium sint inventore eligendi error quidem fuga aspernatur ullam illo quod praesentium unde ab odio beatae veniam sunt voluptatibus labore asperiores itaque ut. Quam ipsam nemo quas natus, veniam perspiciatis harum laudantium voluptas atque culpa saepe reiciendis impedit facilis excepturi vel repudiandae aliquam commodi exercitationem, iusto consequatur. Amet, ea veritatis!</p>
+        </section>
+        <aside class="border-now">
+            <h1>More About Us</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum similique saepe repellendus dolore repellat recusandae unde reiciendis facere odio sit mollitia, aliquid neque? Dignissimos, similique? Atque ex harum eveniet quae doloremque a sequi inventore reprehenderit aliquid deserunt fugit, aliquam cum autem deleniti iste minus ratione, vel, pariatur veritatis mollitia blanditiis?</p>
+        </aside>
+        <footer class="border-now">Copyright CodeWithNikhil</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap"
+    rel="stylesheet"
+  />
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        header{
+            border:3px solid red;
+        }
+        img{
+            display:block;
+            width:34px;
+            margin:auto;
+        }
+        h3{
+            font-family:"Big Shoulders Display", cursive;
+            text-align: center;
+        }
+        .box{
+            box-sizing:border-box;
+            border:4px solid black;
+            padding:10px;
+            margin:10px 0px;
+            display:inline-block;/*we cannot set width of inline element, but con do in block elements and if we want to write inline-block then the element remains inline but we also can set its width*/
+            background-color:rgb(233, 233, 233);
+            width:33%; 
+        } 
+        .container{
+            width:900px;/**/
+            margin:auto;
+        }
+    </style> 
+</head>
+<body>
+    <header class = "top">
+        <img src="https://static.toiimg.com/photo/72975551.cms" alt="">
+        <h3>Welcome to Nikhil's Blog</h3> 
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minima. Iusto odit optio earum quos, iste deleniti pariatur recusandae expedita omnis provident natus molestiae? Eveniet ad est illum quaerat optio veritatis vero dicta, repellendus, laudantium quae cupiditate, et nemo voluptatum molestias sequi magnam vel!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minima. Iusto odit optio earum quos, iste deleniti pariatur recusandae expedita omnis provident natus molestiae? Eveniet ad est illum quaerat optio veritatis vero dicta, repellendus, laudantium quae cupiditate, et nemo voluptatum molestias sequi magnam vel!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minima. Iusto odit optio earum quos, iste deleniti pariatur recusandae expedita omnis provident natus molestiae? Eveniet ad est illum quaerat optio veritatis vero dicta, repellendus, laudantium quae cupiditate, et nemo voluptatum molestias sequi magnam vel!</p>
+        </div>
+    </div>
+</body>
+</html>

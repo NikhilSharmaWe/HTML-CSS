@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #firstPara{
+            background-color: tomato;
+            height:100px;
+            width:455px;
+            color:white;/*can give colors in three ways simple, rgb value and hex colors*/
+            border:4px solid green;
+            border-radius:10px;
+        }
+        #secondPara{
+            background-color:rgb(183, 255, 183);
+            height:100px;
+            width:455px;
+            border-top:2px solid tomato;
+            border-bottom:2px solid blue;
+            border-left:2px solid orange;
+            border-right:2px solid purple;
+            border-top-left-radius: 10px;
+        }
+        #thirdPara{
+            height:300px;
+            width:455px;
+            background-image: url('images/food1.jpg');
+            border: 2px solid black;
+            background-repeat: no-repeat;/*repeat-x and repeat-y will make it repeat in x and y direction*/
+            background-position: center center;/*former for y, latter for x. also can do center right, center left, top left etc*/
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id = "firstPara">This is a paragraph</p>
+    <p id = "secondPara">This is my second paragraph</p>
+    <p id = "thirdPara">This is my third paragraph</p>
+</body>
+</html>
